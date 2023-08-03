@@ -132,7 +132,7 @@ export default class MultiSlider extends React.Component {
         onPanResponderTerminationRequest: (evt, gestureState) => false,
         onPanResponderRelease: (evt, gestureState) => end(gestureState),
         onPanResponderTerminate: (evt, gestureState) => end(gestureState),
-        onShouldBlockNativeResponder: (evt, gestureState) => true,
+        onShouldBlockNativeResponder: (evt, gestureState) => false,
       });
     };
 
